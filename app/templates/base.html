@@ -1,0 +1,18 @@
+<html>
+    <head>
+        {% if title %}
+        <title>{{ title }} - PyClassApp</title>
+        {% else %}
+        <title>Welcome to PyClassApp</title>
+        {% endif %}
+    </head>
+    <body>
+        <div>
+            PyClassApp: 
+            <a href="/index">Home</a>
+            <a href="/historic">Historic</a>
+        </div>
+        <h1>
+        {% block content %}{% endblock %}
+    </body>
+</html>
